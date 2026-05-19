@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmTips - Hitta din nasta favorit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">&#127916;</span>
+                <h1>FilmTips</h1>
+            </div>
+            <nav class="nav">
+                <a href="#popular" class="nav-link">Populara</a>
+                <a href="#genres" class="nav-link">Genrer</a>
+                <a href="#about" class="nav-link">Om oss</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Upptack din nasta favoritfilm</h2>
+            <p class="hero-subtitle">Vi hjalper dig hitta de basta filmerna att se. Blaaddra bland vara handplockade rekommendationer.</p>
+            <a href="#popular" class="hero-btn">Utforska filmer</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="filter-section" id="genres">
+        <div class="container">
+            <h2 class="section-title">Filtrera efter genre</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-genre="alla">Alla</button>
+                <button class="filter-btn" data-genre="action">Action</button>
+                <button class="filter-btn" data-genre="drama">Drama</button>
+                <button class="filter-btn" data-genre="sci-fi">Sci-Fi</button>
+                <button class="filter-btn" data-genre="komedi">Komedi</button>
+                <button class="filter-btn" data-genre="thriller">Thriller</button>
+                <button class="filter-btn" data-genre="aventyr">Aventyr</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies-section" id="popular">
+        <div class="container">
+            <h2 class="section-title">Vara filmtips</h2>
+            <div class="movies-grid" id="movies-grid">
+                <!-- Movies will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Veckans toppval</h2>
+            <div class="featured-scroll" id="featured-scroll">
+                <!-- Featured movies will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Om FilmTips</h2>
+            <div class="about-content">
+                <p>FilmTips ar din guide till filmvarlden. Vi valjer ut de basta filmerna fran alla genrer och epoker for att hjalpa dig hitta nagot nytt att titta pa. Oavsett om du gillar action, drama eller komedi sa har vi nagot for dig.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Filmtips</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Genrer</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Gratis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FilmTips - Slutprojekt Webbutveckling</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
